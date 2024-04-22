@@ -1,0 +1,17 @@
+import io;
+
+class BinaryExpr {
+	public static void main(String[] args) {
+		int c;
+		c = 10;
+		io.println(c);
+		c = c*2;
+		io.println(c);
+		c = c +10;
+		io.println(c);
+		c = c -20;
+		io.println(c);
+		c = c/2;
+		io.println(c);
+	}
+}
