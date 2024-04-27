@@ -1,0 +1,10 @@
+import io;
+class A {
+    public int testing() {
+        int i;
+        boolean b;
+        i = 1 + 1;
+        b = !false;
+        return i;
+    }
+}
