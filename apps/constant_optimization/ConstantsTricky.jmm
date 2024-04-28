@@ -1,0 +1,16 @@
+import io;
+class A {
+    public int testing() {
+        int i;
+        i = 2;
+        while (false) {
+            i = 1;
+        }
+        if (i < 2) {
+            i = 3;
+        } else {
+            i = 4;  // here
+        }
+        return i;   // 4
+    }
+}

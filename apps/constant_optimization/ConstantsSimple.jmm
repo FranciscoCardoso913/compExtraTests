@@ -1,10 +1,19 @@
 import io;
 class A {
-    public int testing() {
+    public int testConstantFolding() {
         int i;
         boolean b;
         i = 1 + 1;
         b = !false;
+        return i;
+    }
+    public int testConstantPropagation() {
+        int i;
+        int o;
+
+        i = 2;
+        o = i;
+
         return i;
     }
 }

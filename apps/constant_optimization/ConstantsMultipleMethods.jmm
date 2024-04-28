@@ -1,0 +1,18 @@
+import io;
+class A {
+    public int testing() {
+        boolean b;
+        b = true;
+        return 0;
+    }
+    public boolean other(boolean b) {
+        return b;
+    }
+    public int another() {
+        boolean var;
+        var = true;
+        var = this.other(var);        // replace "var" argument with true
+
+        return this.testing();  // cannot replace by 0, because (for example) we could modify class fields inside the method
+    }
+}

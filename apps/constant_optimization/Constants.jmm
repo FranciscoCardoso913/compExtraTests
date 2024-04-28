@@ -8,6 +8,6 @@ class A {
         b = 1 < 2 && true && false && (true && false && (2 < 3));  // false
         b = i < 2 && (i < 1 && i < 2);  // false
         b = i + 1 * 2 - 3 * 4 / (2 + 1 * 2 - 1 / 3) < 2 && i + 1 < 2 && i * 2 - 3 < (4 + 2 * 2);    // false
-        return i;
+        return i;   // 20
     }
 }

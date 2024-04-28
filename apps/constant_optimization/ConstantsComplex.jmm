@@ -1,0 +1,31 @@
+import io;
+class A {
+    public int testing(int a) {
+        int i;
+        int aux1;
+        int aux2;
+
+        while (a < 10) {
+            aux1 = 1;
+            if (a < 5) {
+                a = a + aux1;   // a + 1
+                while (a < 3) {
+                    aux2 = 2;
+                    a = a + aux1;   // cannot replace, since we change aux1
+                    while (aux1 < 3) {
+                        aux1 = aux1 + aux2; // aux1 + 2
+                    }
+                }
+            }
+            else {
+                a = a + aux1;   // a + 1
+                aux2 = 2;
+                while (a < 8) {
+                    a = a + aux2;   // a + 2
+                }
+            }
+            a = a + aux1;   // cannot replace
+        }
+        return a;       // cannot replace
+    }
+}
